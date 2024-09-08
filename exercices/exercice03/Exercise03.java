@@ -10,4 +10,4 @@ public class Exercise03 {
         int age2 = age + 10 ;
         System.out.println("Dans 10 ans j'aurais "+ age2 + " ans");
     }
-}
+}y
