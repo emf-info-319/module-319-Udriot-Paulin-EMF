@@ -24,9 +24,12 @@ public class ExcerciceBoucles1 {
             }
           }
           i = 0;
-        while (i < 3) {
+        while (i < 5) {
               i++;
               System.out.println("Boucle while, itération " + i);
+              if (i==3) {
+                break;
+              }
           }
          
 
