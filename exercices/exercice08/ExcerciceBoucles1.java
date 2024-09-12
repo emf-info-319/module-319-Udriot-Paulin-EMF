@@ -19,8 +19,8 @@ public class ExcerciceBoucles1 {
        
         for (i = 1; i < 6; i++) {
             System.out.println(boucles +i);
-            if (i == 2) {
-                i++;
+            if (i == 3) {
+                continue;
             }
           }
           i = 0;
