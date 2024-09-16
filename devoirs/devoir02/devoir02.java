@@ -1,31 +1,46 @@
 package devoirs.devoir02;
 public class devoir02 {
     public final static int CAPACITE_RESERVOIR_A = 3;
-    // 
-    int CAPACITE_RESERVOIR_B = 5;
+    public final static int CAPACITE_RESERVOIR_B = 5;
     public static void main(String[] args) {
         int reservoirA = CAPACITE_RESERVOIR_A;
-        int reservoirB = 5;
+        int reservoirB = CAPACITE_RESERVOIR_B;
         int remplissage;
-        remplissage = ( int ) ( Math.random() * ( (reservoirB + reservoirA) - -1 + 0 ) ) + -1; // todo à corriger, il peut mettre -1 comme valeur
-        // int nombre = ( int ) ( Math.random() * ( MAX - MIN + 1 ) ) + MIN;
-        System.out.println(remplissage);
-        int nombrearenplire;
-        //nombrearenplire = remplissage - 8;
-        //        1             2,5              4
-        for (int tour = 0; tour < remplissage; tour++) {
-            // 3,6
-            //System.out.println("Remplissage du réservoir A...");
-            System.out.println(tour);
 
-            // si il y a de la place dans le réservervoir 3, 
-            // sinon dans le réservervoir B
-            // if ()
-            // else
+        int MAX = reservoirB + reservoirA;
+        int MIN = 0;
+
+        remplissage = ( int ) ( Math.random() * ( MAX - MIN + 0 ) ) + MIN;
+        System.out.println("Il y a " + remplissage + " litres à remplir.");
+               
+        for (int tour = 1; tour <= remplissage; tour++) {
+            // 3,6
+            System.out.println("Remplissage du réservoir A...");
+            System.out.println("Le réservoir A : " + tour + ", le réservoir B : 0");
+           
+            if (tour == 3) {
+                break;
+            }
         }
-        
             
-        
+        int nombre = 1;
+        for(int tour = 3; tour < remplissage; tour++) {
+            System.out.println("Remplissage du réservoir B...");
+            System.out.println("Le réservoir A : 3" + ", le réservoir B : " + nombre);
+            nombre++;
+        }
+
+
+        // for (int tour = 1; tour <= remplissage; tour++) {
+        //     // 3,6
+        //     System.out.println("Remplissage du réservoir A...");
+           
+        //     if (tour <= 3) {
+        //         System.out.println("Le réservoir A : " + tour + ", le réservoir B : 0");
+        //     } else {
+        //         System.out.println("Le réservoir A : 3" + ", le réservoir B : " + (tour - 3));
+        //     }
+        // }
     }
     
 }
