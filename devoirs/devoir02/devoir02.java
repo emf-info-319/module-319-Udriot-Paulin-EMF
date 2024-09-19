@@ -14,7 +14,6 @@ public class devoir02 {
         System.out.println("Il y a " + remplissage + " litres à remplir.");
                
         for (int tour = 1; tour <= remplissage; tour++) {
-            // 3,6
             System.out.println("Remplissage du réservoir A...");
             System.out.println("Le réservoir A : " + tour + ", le réservoir B : 0");
            
