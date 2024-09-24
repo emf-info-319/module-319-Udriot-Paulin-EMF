@@ -10,8 +10,8 @@ public class devoir03 {
         if (annee % 4 == 0) {
             tab[2] = tab [2] + 1;
         }  
-        int nombreJourTotal = 0;
-        for (int i=0; i <mois; i++){
+        int nombreJourTotal = jour;
+        for (int i=0; i <mois-1; i++){
             //nombreJourTotal = nombreJourTotal + tab[i];
             nombreJourTotal += tab[i];
             
