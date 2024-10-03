@@ -1,4 +1,4 @@
-package devoirs.devoir03;
+package devoir03;
 public class devoir03 {
     public static void main(String[] args) {
         int jour = 21;
