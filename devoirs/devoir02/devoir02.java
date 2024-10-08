@@ -1,4 +1,4 @@
-package devoirs.devoir02;
+package devoir02;
 public class devoir02 {
     public final static int CAPACITE_RESERVOIR_A = 3;
     public final static int CAPACITE_RESERVOIR_B = 5;

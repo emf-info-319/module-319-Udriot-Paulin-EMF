@@ -1,5 +1,4 @@
 package devoir03;
-
 public class devoir03 {
     public static void main(String[] args) {
         int annee = 2024;
@@ -24,4 +23,5 @@ public class devoir03 {
         System.out.println("Le " + jours + "/" + mois + "/" + annee + " est le jour " + joursDeLan + " de l'An.");
 
     }
+
 }

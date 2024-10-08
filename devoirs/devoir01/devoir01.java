@@ -1,4 +1,4 @@
-package devoirs.devoir01;
+package devoir01;
 
 public class devoir01 {
     public final static byte majorite = 20;
