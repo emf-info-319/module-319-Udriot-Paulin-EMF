@@ -12,7 +12,7 @@ public class ExerciceCondition4 {
         } else if (temperature < 0 && temperature >= -10) {
             System.out.println("Il fait froid");
 
-        } else if (temperature <= -10) {
+        } else  (temperature <= -10) {
             System.out.println("Il fait très froid");
         }
     }
