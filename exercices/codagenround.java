@@ -7,13 +7,13 @@ public class codagenround {
         for (int j = 0; j < rayons.length; j++) {
             rayons[j] = genreNombre(1, 10);
             if(rayons[j] > 50){
-                System.out.println("Aire");          
+                System.out.println("Aire :" + PI*rayons[j]);          
             }
             else{
                 System.out.println("");
             }
         }
-        for (int i = rayons.length ; i > 0 ; i--){
+        for (int i = rayons.length-1 ; i > 0 ; i--){
             System.out.println(rayons[i]);
 
         }

@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class ExercicesMethodesTableaux {
+    
 
     // Méthode pour créer un tableau de taille donnée
     public static int[] creerTableau(int taille) {
@@ -17,9 +18,8 @@ public class ExercicesMethodesTableaux {
 
     // Méthode pour remplir un tableau avec des valeurs aléatoires
     public static int[] remplirAvecValeursAleatoires(int[] tableau) {
-        Random rand = new Random();
         for (int i = 0; i < tableau.length; i++) {
-            tableau[i] = rand.nextInt(20) + 1;  // Valeurs entre 1 et 20
+            tableau[i] = (int)(Math.random() * (100 - 0 + 1)) + 0;
         }
         return tableau;
     }
@@ -39,8 +39,10 @@ public class ExercicesMethodesTableaux {
     // Méthode pour trouver la valeur minimale dans un tableau
     public static int valeurMinimale(int[] tableau) {
         int min = tableau[0];
-        for (int valeur : tableau) {
-            if (valeur < min) min = valeur;
+        for (int i = 1; i < tableau.length; i++) {
+          if (min > tableau[i]) {
+            min = tableau[i];
+          }
         }
         return min;
     }
@@ -57,8 +59,8 @@ public class ExercicesMethodesTableaux {
     // Méthode pour compter la fréquence d'une valeur dans un tableau
     public static int compterFrequence(int[] tableau, int valeur) {
         int count = 0;
-        for (int v : tableau) {
-            if (v == valeur) count++;
+        for (int i = 0; i < tableau.length ; i++) {
+            if (i == valeur) count++;
         }
         return count;
     }
@@ -66,8 +68,8 @@ public class ExercicesMethodesTableaux {
     // Méthode pour calculer la somme des valeurs du tableau
     public static int sommeTableau(int[] tableau) {
         int somme = 0;
-        for (int valeur : tableau) {
-            somme += valeur;
+        for (int i = 0; i < tableau.length; i++) {
+            somme += tableau[i];
         }
         return somme;
     }
@@ -89,10 +91,14 @@ public class ExercicesMethodesTableaux {
 
     // Méthode pour trouver la première occurrence d'une valeur
     public static int premiereOccurrence(int[] tableau, int valeur) {
+        int position = -1;
         for (int i = 0; i < tableau.length; i++) {
-            if (tableau[i] == valeur) return i;
+            if (tableau[i] == valeur){
+                position = i;
+                break;
+            }
         }
-        return -1;
+        return position;
     }
 
     // Méthode pour trouver la dernière occurrence d'une valeur
